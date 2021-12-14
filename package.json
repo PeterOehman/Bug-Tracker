@@ -1,7 +1,7 @@
 {
   "name": "bugtracker",
   "version": "2.0.0",
-  "description": "Bug tracking Application",
+  "description": "Bug tracking Application with ticket system",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
