@@ -6,6 +6,8 @@ const User = require('./models/User')
 const Ticket = require('./models/Ticket')
 
 //associations could go here!
+User.hasMany(Ticket)
+Ticket.belongsTo(User)
 
 module.exports = {
   db,
