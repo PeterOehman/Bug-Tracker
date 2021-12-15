@@ -1,8 +1,7 @@
 const Sequelize = require('sequelize')
 const db = require('../db')
-const axios = require('axios');
 
-const Ticket = db.define('user', {
+const Ticket = db.define('ticket', {
   description: {
     type: Sequelize.TEXT,
     allowNull: false
@@ -10,6 +9,10 @@ const Ticket = db.define('user', {
   priority: {
     type: Sequelize.ENUM(['low', 'medium', 'high']),
     defaultValue: 'low'
+  },
+  asignee: {
+    type: Sequelize.INTEGER,
+    allowNull: false
   }
 })
 
